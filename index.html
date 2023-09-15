@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="shortcut icon" href="css/BookIcon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h2>Bookshelf APP</h2>
+        <div class="search-book">
+            <input id="searchBook" type="text" placeholder="Judul Buku ...">
+            <input id="searhSubmit" type="submit" value="Cari">
+        </div>
+    </header>
+    <main>
+        <div class="contents">
+            <form class="input-book" id="form">
+                <div class="header-form">
+                    <h2>Masukkan Input Buku</h2>
+                    <hr>
+                </div>
+                <div class="input">
+                    <label for="input-title">Judul</label><br>
+                    <input id="input-title" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="input-author">Penulis</label><br>
+                    <input id="input-author" type="text" maxlength="25" required>
+                </div>
+                <div class="input">
+                    <label for="input-year">Tahun</label><br>
+                    <input id="input-year" type="number" required>
+                </div>
+                <div class="input-clear">
+                    <label for="input-complete">Selesai dibaca</label>
+                    <input id="input-complete" type="checkbox">
+                </div>
+                <input type="submit" value="Simpan" name="submit" class="btn-submit">
+            </form>
+            <div class="book">
+                <div class="book-uncomplete">
+                    <h3>Buku Belum Selesai Dibaca</h3>
+                    <hr>
+                    <div class="list-book" id="uncomplete"></div>
+                </div>
+                <div class="book-complete">
+                    <h3>Buku Selesai Dibaca</h3>
+                    <hr>
+                    <div class="list-book" id="complete"></div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-search">
+            <div class="box-search">
+                <h3>Pencarian Buku</h3>
+                <hr>
+                <div class="list-book" id="listBook"></div>
+            </div> 
+        </div>
+        
+    </main>
+    
+    <script src="DOM.js"></script>
+</body>
+</html>

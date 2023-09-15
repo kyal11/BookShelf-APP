@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main{
+    margin: 10px;
+}
+header{
+    display: flex;
+    background-color:#F0DE36;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0px 0px 10px;
+}
+form{
+    display: inline-block;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    width: 50%;
+    height: fit-content;
+    padding: 10px;
+    background: lightgoldenrodyellow;
+}
+form h2{
+    text-align: center;
+}
+form .input-clear{
+    text-align: center;
+}
+form .btn-submit{
+    display: block;
+    margin: auto;
+    width: 90px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 1px;
+}
+
+.contents{
+    display: flex;
+    margin: 15px;
+
+}
+.search-book{
+    position: absolute;
+    right: 0px;
+    padding-right: 15px;
+}
+
+.search-book #searchBook{
+    width: 250px;
+    height: 30px;
+    font-family: 'Poppins';
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 7px;
+}
+.search-book #searhSubmit{
+    width: 40px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 1px;
+}
+
+.book{
+    display: inline-block;
+    padding-left: 50px;
+    width: 700px;
+    place-items: center;
+}
+.book-uncomplete{
+    padding: 5px 0 25px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin: 15px;
+    background: lightgoldenrodyellow;
+    flex-grow: 1;
+    height: fit-content;
+}
+.book-uncomplete h3{
+    text-align: center;
+}
+.book-complete{
+    margin: 15px;
+    padding: 5px 0 25px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: lightgoldenrodyellow;
+    flex-grow: 1;   
+    height: fit-content;
+}
+.book-complete h3{
+    text-align: center;
+}
+.wrapper-search{
+    width: 100%;
+    display: flex;
+}
+.box-search{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background: lightgoldenrodyellow;
+    width: 680px;
+
+    margin: auto;
+}
+.input input{
+    width: 100%;
+    font-size: 14px;
+    padding: 7px;
+    font-family: 'Poppins';
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    outline: none;
+}
+
+hr{
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin: auto;
+}
+.list-book{
+    width: 100%;
+    max-height: 160px;
+    overflow: auto;
+    
+}
+.bookItem{
+    width: 580px;
+    min-width: fit-content;
+    margin:5px auto;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+.bookContainer{
+    display: flex;
+    align-items: baseline;
+}
+
+.bookTitle{
+    font-size: 14pt;
+}
+.bookAuthor{
+    font-size: 12px;
+}
+.bookYear{
+    padding-left: 10px;
+    font-size: 10pt;
+}
+
+.wrapperAuthorandIcon{
+    display: flex;
+    justify-content: space-between;
+}
+.checkIcon{
+    width: 25px;
+    height: 25px;
+
+    background: url('../css/check.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.thrashIcon{
+    width: 25px;
+    height: 25px;
+
+    background: url('../css/trash.svg');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.undoIcon{
+    width: 25px;
+    height: 25px;
+
+    background: url('../css/chevron.svg');
+
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
